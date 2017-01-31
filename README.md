@@ -1,4 +1,4 @@
-# union command
+# The `union` command for Unix text processing
 
 Print the lines that are in any of the inputs.
 
