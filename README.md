@@ -8,7 +8,7 @@ Syntax:
 
 Example:
 
-    $ union a.txt b.txt
+    $ union 1.txt 2.txt
     => lines that are in either of the files.
 
 
@@ -29,6 +29,30 @@ Related commands for Unix text processing sets:
 * [`intersect`](https://github.com/sixarm/intersect): print lines in (A intersect B)
 * [`except`](https://github.com/sixarm/except): print lines in (A except B) a.k.a. (A - B)
 * [`extra`](https://github.com/sixarm/extra) : print lines in (A extra B) a.k.a. (B - A)
+
+Examples:
+
+    $ cat 1.txt
+    alpha
+    bravo
+
+    $ cat 2.txt
+    alpha
+    charlie
+
+    $ union a.txt b.txt
+    alpha
+    bravo
+    charlie
+
+    $ intersect a.txt b.txt
+    alpha
+
+    $ except a.txt b.txt
+    bravo
+
+    $ extra a.txt b.txt
+    charlie
 
 
 ## Tracking
