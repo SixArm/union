@@ -6,42 +6,29 @@ Syntax:
 
     union <input> ...
 
-
-## Examples
-
-Example with two files:
+Example:
 
     $ union a.txt b.txt
     => lines that are in either of the files.
 
-Example with three files:
-
-    $ union a.txt b.txt c.txt
-     => lines that are in any of the files.
-
-
-## Specifics
-
-The order does not matter.
-
-
-## Related commands
-
-These commands are related:
-
-  * `union`: print lines in (A union B)
-  * `intersect`: print lines in (A intersect B)
-  * `except`: print lines in (A except B) a.k.a. (A - B)
-  * `extra` : print lines in (A extra B) a.k.a. (B - A)
-
 
 ## Notes
 
+The order doesn't matter.
+
 In set theory, this command is (A union B).
 
-This command aims to be fast, not to sort.
-
 This command is currently implemented using `awk` and POSIX.
+
+
+## Related
+
+Related commands for Unix text processing sets:
+
+* [`union`](https://github.com/sixarm/union): print lines in (A union B)
+* [`intersect`](https://github.com/sixarm/intersect): print lines in (A intersect B)
+* [`except`](https://github.com/sixarm/except): print lines in (A except B) a.k.a. (A - B)
+* [`extra`](https://github.com/sixarm/extra) : print lines in (A extra B) a.k.a. (B - A)
 
 
 ## Tracking
